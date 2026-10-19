@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gadget Hub — John Daniel Christadore</title>
+<meta name="description" content="Gadget Hub: the portfolio of John Daniel Christadore — products I've designed, built and shipped.">
+<meta name="theme-color" content="#111318">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@700;800;900&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--ink:#111318;--muted:#5b6170;--line:#e3e6eb;--accent:#2f6bff}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header.top{border-bottom:1px solid var(--line);background:#fff}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:"JetBrains Mono",monospace;font-weight:700;letter-spacing:-.02em;text-decoration:none}.logo span{color:var(--accent)}
+nav a{margin-left:20px;text-decoration:none;color:var(--muted);font-size:14px;font-weight:500}nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 48px}.eyebrow{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.05;margin:12px 0 18px;letter-spacing:-.03em}
+.bio{max-width:680px;font-size:18px;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:#fff;text-decoration:none;font-weight:600;font-size:14px}
+.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}.btn:hover{transform:translateY(-1px)}
+h2{font-size:24px;margin:24px 0 6px;letter-spacing:-.02em}.sub{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;padding-bottom:64px}
+.card{border-radius:16px;padding:24px;display:flex;flex-direction:column;min-height:270px;box-shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.06);background:var(--c-bg);color:var(--c-ink);border:1px solid var(--c-line,transparent);font-family:var(--c-font,Inter),system-ui,sans-serif}
+.card .name{font-family:var(--c-display,inherit);font-size:26px;font-weight:800;margin:0;letter-spacing:-.02em}
+.card .tag{color:var(--c-accent);font-weight:600;margin:6px 0 12px;font-size:15px}
+.card p.desc{margin:0 0 16px;opacity:.85;font-size:14.5px}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}.stack span{font-family:"JetBrains Mono",monospace;font-size:11.5px;padding:3px 8px;border-radius:6px;border:1px solid var(--c-line,rgba(127,127,127,.3));opacity:.9}
+.card .actions{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+.card .actions a{font-size:14px;font-weight:700;text-decoration:none;padding:9px 14px;border-radius:9px}
+.card .live{background:var(--c-accent);color:var(--c-on-accent,#fff)}.card .repo{border:1px solid var(--c-line,rgba(127,127,127,.4))}
+.card .note{font-size:12.5px;opacity:.65;align-self:center}
+/* per-app isolated brands */
+.afterido{--c-bg:#fbf5f5;--c-ink:#3a2a2a;--c-accent:#a86e6e;--c-line:#ecd6d6;--c-display:"Playfair Display",serif}
+.fullsend{--c-bg:#08090A;--c-ink:#fff;--c-accent:#FF5A1F;--c-line:#26282b;--c-display:Archivo,sans-serif}
+.flippulse{--c-bg:#0d1117;--c-ink:#e6edf3;--c-accent:#f7931a;--c-on-accent:#0d1117;--c-line:#30363d;--c-display:"JetBrains Mono",monospace}
+.playpal{--c-bg:#0E2B20;--c-ink:#F6F4EE;--c-accent:#C8A15A;--c-on-accent:#0E2B20;--c-line:#3F5F4A;--c-font:"Plus Jakarta Sans";--c-display:"Plus Jakarta Sans",sans-serif}
+.brovisional{--c-bg:#031a10;--c-ink:#f3efe0;--c-accent:#d4a62a;--c-on-accent:#031a10;--c-line:#1d3a2b}
+.sitescribe{--c-bg:#ffffff;--c-ink:#0F172A;--c-accent:#0B5FFF;--c-line:#D5DBE3}.sitescribe .name{color:#0F274A}
+.creativeplane{--c-bg:#0a1428;--c-ink:#eef1f6;--c-accent:#d4af37;--c-on-accent:#0a1428;--c-line:#132444}
+.ggid{--c-bg:#ffffff;--c-ink:#111827;--c-accent:#111827;--c-line:#e5e7eb;--c-font:Inter}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="#">gadget<span>/</span>hub</a><nav><a href="#projects">Projects</a><a href="https://github.com/jchristadore-ux">GitHub</a><a href="mailto:jchristadore@gmail.com">Contact</a></nav></div></header>
+<main class="wrap">
+<section class="hero">
+<div class="eyebrow">Gadget Hub · Portfolio</div>
+<h1>John Daniel Christadore</h1>
+<p class="bio">I build and ship products end to end: the idea, the code, the brand, and the launch. This hub collects my work, from consumer apps and golf tools to field software for contractors and automated trading bots. Each project keeps its own look, so you see it the way its users do.</p>
+<div class="links">
+<a class="btn primary" href="mailto:jchristadore@gmail.com">✉ jchristadore@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/in/johndanielchristadore">LinkedIn</a>
+<a class="btn" href="https://github.com/jchristadore-ux">GitHub</a>
+</div>
+</section>
+<section id="projects">
+<h2>Projects</h2><p class="sub">Eight things I've built. Each card links to the live product and its source when the repo is public.</p>
+<div class="grid">
+
+<article class="card afterido"><h3 class="name">AfterIDo</h3><div class="tag">Change your name everywhere. Without the headache.</div>
+<p class="desc">A guided, state-by-state checklist for changing your name after marriage, covering every agency and account in order.</p>
+<div class="stack"><span>TypeScript</span><span>React</span><span>Tailwind</span><span>Cloudflare Workers</span></div>
+<div class="actions"><a class="live" href="https://jchristadore-ux.github.io/AfterIDo/">Visit site</a><a class="repo" href="https://github.com/jchristadore-ux/AfterIDo">GitHub</a></div></article>
+
+<article class="card fullsend"><h3 class="name">FullSend.</h3><div class="tag">Everything goes live.</div>
+<p class="desc">Give FullSend your app and it builds the marketing machine. Connect a GitHub repo and it works out what the product does, who needs it, what to post, and when to send it.</p>
+<div class="stack"><span>TypeScript</span><span>Next.js</span><span>Tailwind</span><span>Vercel</span></div>
+<div class="actions"><a class="live" href="https://full-send-lyart.vercel.app">Visit site</a><a class="repo" href="https://github.com/jchristadore-ux/FullSend">GitHub</a></div></article>
+
+<article class="card flippulse"><h3 class="name">FlipPulse</h3><div class="tag">15-minute BTC Up/Down automated bot</div>
+<p class="desc">An automated trading bot that trades 15-minute Bitcoin up/down markets.</p>
+<div class="stack"><span>Python</span><span>Automation</span></div>
+<div class="actions"><a class="live" href="https://github.com/jchristadore-ux/FlipPulse">GitHub</a><span class="note">Backend bot, so there's no public site</span></div></article>
+
+<article class="card playpal"><h3 class="name">PlayPal</h3><div class="tag">Score the round. Settle the side games. Sync the group.</div>
+<p class="desc">A golf scoring and side-game companion: live scorecards, Wolf, Nassau, Skins and more, with automatic payouts and cross-device sync. No ads, no trackers.</p>
+<div class="stack"><span>JavaScript</span><span>PWA</span><span>Vercel</span></div>
+<div class="actions"><a class="live" href="https://playpal-nine.vercel.app">Visit site</a><a class="repo" href="https://github.com/jchristadore-ux/playpal">GitHub</a></div></article>
+
+<article class="card brovisional"><h3 class="name">The Brovisional</h3><div class="tag">The Official Unofficial Handicap System (OUHS)</div>
+<p class="desc">Golf scores and an unofficial WHS-style handicap for the crew.</p>
+<div class="stack"><span>TypeScript</span><span>Next.js</span><span>Tailwind</span></div>
+<div class="actions"><a class="live" href="https://brovisional.vercel.app">Visit site</a><span class="note">Private repo</span></div></article>
+
+<article class="card sitescribe"><h3 class="name">SiteScribe</h3><div class="tag">Jobsite notes, captured</div>
+<p class="desc">Lets crews at Mazzeo Construction record jobsite voice memos and photos from the field.</p>
+<div class="stack"><span>Web app</span><span>Vercel</span></div>
+<div class="actions"><a class="live" href="https://sitescribe-kappa.vercel.app">Visit site</a></div></article>
+
+<article class="card creativeplane"><h3 class="name">CreativePlane</h3><div class="tag">Command Center</div>
+<p class="desc">CreativePlane's operations dashboard, a single command center for running the business.</p>
+<div class="stack"><span>Web app</span><span>Vercel</span></div>
+<div class="actions"><a class="live" href="https://creativeplane-command-center.vercel.app">Visit site</a></div></article>
+
+<article class="card ggid"><h3 class="name">Gadget Gets IT Done</h3><div class="tag">Your house is smart. Your tech guy should be too.</div>
+<p class="desc">Local home and business tech: Wi-Fi and mesh, smart home, home theater, and device setup, fix, connect and maintain.</p>
+<div class="stack"><span>TypeScript</span><span>Next.js</span><span>Tailwind</span><span>Geist</span></div>
+<div class="actions"><a class="live" href="https://ggid-live.vercel.app">Visit site</a><a class="repo" href="https://github.com/jchristadore-ux/GadgetGetsItDone">GitHub</a></div></article>
+
+</div></section></main>
+<footer><div class="wrap">© 2026 John Daniel Christadore · <a href="mailto:jchristadore@gmail.com">jchristadore@gmail.com</a> · Built and hosted on Vercel</div></footer>
+</body></html>
